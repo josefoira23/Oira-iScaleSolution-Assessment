@@ -23,6 +23,27 @@ namespace OIra_iScaleSolution_Assessment.Model
 
     }
 
+    public class StationReadingParam
+    {
+        private int Counts = 10;
+        public int count
+        {
+            get
+            {
+                return Counts;
+            }
+            set
+            {
+                if (Counts < 1 || Counts > 100)
+                {
+                    throw new ArgumentOutOfRangeException((nameof(count)));
+                }
+                Counts = value;
+            }
+        }
+    }
+
+
 
     public class stationReading
     {

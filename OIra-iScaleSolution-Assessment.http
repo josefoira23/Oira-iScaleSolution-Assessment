@@ -1,4 +1,4 @@
-@OIra_iScaleSolution_Assessment_HostAddress = http://localhost:5048
+@OIra_iScaleSolution_Assessment_HostAddress = http://localhost:3000
 
 GET {{OIra_iScaleSolution_Assessment_HostAddress}}/weatherforecast/
 Accept: application/json
