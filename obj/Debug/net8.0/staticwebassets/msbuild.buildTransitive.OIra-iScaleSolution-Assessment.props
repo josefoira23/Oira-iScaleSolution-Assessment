@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\OIra-iScaleSolution-Assessment.props" />
+</Project>

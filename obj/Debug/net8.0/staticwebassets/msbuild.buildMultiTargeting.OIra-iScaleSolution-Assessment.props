@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OIra-iScaleSolution-Assessment.props" />
+</Project>

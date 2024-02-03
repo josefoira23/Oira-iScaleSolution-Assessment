@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using OIra_iScaleSolution_Assessment.Model;
+using System.Net;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +11,52 @@ namespace OIra_iScaleSolution_Assessment.Controllers
     [ApiController]
     public class RainfallController : ControllerBase
     {
-        // GET: api/<RainfallController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+
+
+        private string roots = "http://environment.data.gov.uk/flood-monitoring";
+        private string url;
+
 
         // GET api/<RainfallController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("id/{stationId}/readings")]
+        public APIResponse readings(string stationId)
         {
-            return "value";
-        }
+            url = "/id/stations/" + stationId + "/readings";
+            APIResponse result = new APIResponse();
+            stationReading reading = new stationReading();
 
-        // POST api/<RainfallController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
 
-        // PUT api/<RainfallController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+            try
+            {
+                using (var wb = new WebClient())
+                {
+                    url = roots + url;
+                    HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+                    request.Method = "GET";
+                    String returnString = String.Empty;
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                    {
+                        Stream dataStream = response.GetResponseStream();
+                        StreamReader reader = new StreamReader(dataStream);
+                        returnString = reader.ReadToEnd();
+                        reading = JsonConvert.DeserializeObject<stationReading>(returnString);
+                        reader.Close();
+                        dataStream.Close();
+                        result.content = reading;
+                    }
+                }
+             
 
-        // DELETE api/<RainfallController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+
+            }
+            catch (Exception ex)
+            {
+             
+
+                result.content = ex.ToString();
+            }
+
+            return result;
         }
     }
 }
