@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OIra-iScaleSolution-Assessment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8724adc6625514a1dfcb052d89364947072d62c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7c8a7af83c5d39d953d060dcb3f449fc1c0fdb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("OIra-iScaleSolution-Assessment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OIra-iScaleSolution-Assessment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

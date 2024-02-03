@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JxTt3Ko5qifKfVXnjsLgWqK1hC0MiNkI3olGjpxziY7iNo6m+LN3wR1Ukjyn+bf6c0kwn5TAVka/EWm8L3lbrw==",
+  "dgSpecHash": "hFWFWxadgc5KmB9xSmReBIVgVd2jhPoQfP5qHatAtyDuXXms6goFhxC/NFuqbNY30YlrVG5FN4h6grrpcZLsrw==",
   "success": true,
   "projectFilePath": "E:\\iScaleSolutionExam\\OIra-iScaleSolution-Assessment\\OIra-iScaleSolution-Assessment\\OIra-iScaleSolution-Assessment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josef\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Josef\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Josef\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Josef\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Josef\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Josef\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
