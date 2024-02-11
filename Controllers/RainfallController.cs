@@ -39,7 +39,7 @@ namespace OIra_iScaleSolution_Assessment.Controllers
         [HttpGet("id/{stationId}/readings")]
         public APIResponse readings(string stationId, int count = 10)
         {
-            url = "/id/stations/" + stationId + "/readings_limit=" + count;
+            url = "/id/stations/" + stationId + "/readings?_limit=" + count;
             APIResponse result = new APIResponse();
             stationReading reading = new stationReading();
 
