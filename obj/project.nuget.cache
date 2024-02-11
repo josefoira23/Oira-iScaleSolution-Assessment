@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hFWFWxadgc5KmB9xSmReBIVgVd2jhPoQfP5qHatAtyDuXXms6goFhxC/NFuqbNY30YlrVG5FN4h6grrpcZLsrw==",
+  "dgSpecHash": "erldPWcknQaN78U9pfojB23KRAzWNVT4ZAE2x+fS7zhgP3ZPpfzYgb7cWfObvKmcfAGFV0o+nWjl28DnHwu7dQ==",
   "success": true,
-  "projectFilePath": "E:\\iScaleSolutionExam\\OIra-iScaleSolution-Assessment\\OIra-iScaleSolution-Assessment\\OIra-iScaleSolution-Assessment.csproj",
+  "projectFilePath": "E:\\iScaleSolutionExam\\exam\\Oira-iScaleSolution-Assessment\\OIra-iScaleSolution-Assessment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josef\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Josef\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
